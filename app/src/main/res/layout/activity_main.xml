@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:id="@+id/linear_layout">
+
+    <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress_bar"
+            android:visibility="gone"
+    />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_username"
+            android:padding="5dp"
+            android:hint="Username"
+            android:layout_margin="5dp"
+    />
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_password"
+            android:hint="Password"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:inputType="numberPassword"
+    />
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_submit"
+            android:text="Submit"
+            android:layout_margin="5dp"
+            android:textAllCaps="false"
+    />
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_alert_dialog"
+            android:text="Show Me Alert Dialog"
+            android:layout_margin="5dp"
+            android:textAllCaps="false"
+    />
+
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_show_recycler_view"
+            android:text="Show RecyclerView"
+            android:layout_margin="5dp"
+            android:textAllCaps="false"
+    />
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_call_rest_api"
+            android:text="Call Rest Api"
+            android:layout_margin="5dp"
+            android:textAllCaps="false"
+    />
+</LinearLayout>
