@@ -1,4 +1,4 @@
-package com.tallymarks.kotlinbasics.remote
+package com.tallymarks.kotlinbasics.data.remote
 
 import retrofit2.Call
 import retrofit2.http.GET

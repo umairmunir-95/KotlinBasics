@@ -1,25 +1,24 @@
-package com.tallymarks.kotlinbasics.remote
+package com.tallymarks.kotlinbasics.data.remote
 
+import com.tallymarks.kotlinbasics.App
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitClient {
 
     companion object {
-        val BASE_URL = "https://api.github.com/"
         var retrofit: Retrofit? = null
         fun getClient(): Retrofit? {
             if (retrofit == null) {
             }
             retrofit = Retrofit.Builder()
-                .baseUrl(BASE_URL)
+                .baseUrl(App.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
             return retrofit
         }
     }
 //    companion object {
-//        val BASE_URL = "https://api.github.com/"
 //        var retrofit: Retrofit? = null
 //        fun getClient(): Retrofit? {
 //            if (retrofit == null) {
@@ -39,7 +38,7 @@ class RetrofitClient {
 //                    }
 //                }
 //                retrofit = Retrofit.Builder()
-//                    .baseUrl(BASE_URL)
+//                    .baseUrl(App.BASE_URL)
 //                    .client(client.build())
 //
 //                    .addConverterFactory(GsonConverterFactory.create())

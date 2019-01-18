@@ -18,25 +18,24 @@
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_username"
+            android:id="@+id/et_name"
             android:padding="5dp"
-            android:hint="Username"
+            android:hint="Name"
             android:layout_margin="5dp"
     />
     <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/et_password"
-            android:hint="Password"
+            android:id="@+id/et_designation"
+            android:hint="Designation"
             android:padding="5dp"
             android:layout_margin="5dp"
-            android:inputType="numberPassword"
     />
     <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/btn_submit"
-            android:text="Submit"
+            android:id="@+id/btn_inser_db"
+            android:text="Insert In DB"
             android:layout_margin="5dp"
             android:textAllCaps="false"
     />

@@ -1,4 +1,4 @@
-package com.tallymarks.kotlinbasics.remote
+package com.tallymarks.kotlinbasics.data.remote
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

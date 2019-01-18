@@ -1,4 +1,4 @@
-package com.tallymarks.kotlinbasics
+package com.tallymarks.kotlinbasics.ui.activities.adapters
 
 import android.content.Context
 import android.support.v7.widget.CardView
@@ -8,13 +8,15 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import android.widget.Toast
+import com.tallymarks.kotlinbasics.R
+import com.tallymarks.kotlinbasics.data.local.Users
 
 
 import java.util.ArrayList
 
 class RecyclerViewAdapter(val context: Context) : RecyclerView.Adapter<RecyclerViewAdapter.UsersHolder>() {
 
-    private var users: List<RecyclerViewModel> = ArrayList()
+    private var users: List<Users> = ArrayList()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UsersHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.rv_single_item, parent, false)
@@ -35,7 +37,7 @@ class RecyclerViewAdapter(val context: Context) : RecyclerView.Adapter<RecyclerV
         return users.size
     }
 
-    fun setData(users: List<RecyclerViewModel>) {
+    fun setData(users: List<Users>) {
         this.users = users
         notifyDataSetChanged()
     }
